@@ -1,6 +1,7 @@
 .jumbotron {
 	background-color: #37003c;
 	color: #fff;
+	padding-top: 20px;
 	padding-bottom: 10px;
     background-image: url(../img/page-hero.png);
     background-repeat: no-repeat;
@@ -27,6 +28,14 @@ h1 {
 
 #mainLogo {
 	max-height: 120px;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
 }
 
 .fixtures {
@@ -59,6 +68,10 @@ h1 {
 	min-width: 180px;
 }
 
+.matchDay {
+	font-weight: 600;
+}
+
 .team.home {
 	text-align:right;
 	min-width: 250px;
@@ -66,6 +79,13 @@ h1 {
 }
 
 .team.away {
+	min-width: 350px;
+    display: inline-block;
+}
+
+.team.teamLabel {
+	min-width: 250px;
+    display: inline-block;
 }
 
 .teamName {
@@ -74,13 +94,15 @@ h1 {
 }
 
 .versus {
-	display: inline-block;
-	width: 30px;
-	margin: 0 15px 0 15px;
-	text-align: center;
-	font-weight: 600;
-	background-color: #ff005a;
-	color: #fff;
+    display: inline-block;
+    /* width: 30px; */
+    margin: 0 15px 0 15px;
+    text-align: center;
+    /* font-weight: 600; */
+    background-color: #ff005a;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 .teamBadge {
@@ -93,7 +115,59 @@ h1 {
     margin: 0 5px;
 }
 
+.tv {
+	display: inline-block;
+    width: 70px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    margin: 0 25px 0 0;
+}
 
+.odds {
+	display: inline-block;
+	min-width: 30px;
+	padding: 3px;
+	border-radius: 4px;
+	font-size: 11px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px 1px #aaa;
+}
+
+.homeOdds {
+	/*background-color: #449D44;*/
+	/*background-color: #00FF87;*/
+	background-color: #5bd25b;
+}
+
+.awayOdds {
+	/*background-color: #286090;*/
+	/*background-color: #05F1FF;*/
+	background-color: #4ba3ef;
+}
+
+.drawOdds {
+	background-color: #bebebe;
+}
+
+.tabData {
+	/*color:#646464;*/
+	margin-right: 15px;
+	font-size: 14px;
+	display: inline-block;
+	min-width: 30px;
+}
+
+
+.tv.bt {
+	background-image: url(../img/bt.png);
+}
+
+.tv.sky {
+	background-image: url(../img/sky.png);
+}
 
 .teamBadge.arsenal {
 	background-image: url(../img/badges/arsenal.png);
@@ -101,6 +175,10 @@ h1 {
 
 .teamBadge.bournemouth {
 	background-image: url(../img/badges/bournemouth.png);
+}
+
+.teamBadge.brighton {
+	background-image: url(../img/badges/brighton.png);
 }
 
 .teamBadge.burnley {
@@ -117,6 +195,10 @@ h1 {
 
 .teamBadge.everton {
 	background-image: url(../img/badges/everton.png);
+}
+
+.teamBadge.huddersfield {
+	background-image: url(../img/badges/huddersfield.png);
 }
 
 .teamBadge.hull {
@@ -141,6 +223,10 @@ h1 {
 
 .teamBadge.mboro {
 	background-image: url(../img/badges/mboro.png);
+}
+
+.teamBadge.newcastle {
+	background-image: url(../img/badges/newcastle.png);
 }
 
 .teamBadge.southampton {
@@ -173,4 +259,86 @@ h1 {
 
 .teamBadge.westham {
 	background-image: url(../img/badges/westham.png);
+}
+
+
+
+@media (max-width: 767px) {
+	.date{
+		color: #ff005a;
+		margin: 0;
+	}
+
+	.fixtures {
+		text-align: center;
+		border-top: 1px solid #c0c0c0;
+	}
+
+	.team.home {
+		min-width: 0;
+		text-align: inherit;
+		margin-top: 10px; 
+	}
+
+	.team.home .teamName {
+    	float: right;
+    	margin-left: 5px;
+	}
+
+	.team.home .teamBadge {
+    	float: left;
+    	top:0;
+	}	
+
+	.team.away {
+		min-width: 100%;
+		margin: 15px 0 10px 0;
+	}
+
+	.versus {
+		margin: 10px 80px 0 80px;
+	}
+
+	.tv {
+		margin: 0;
+	}
+
+	.odds {
+		display: none;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1215px) {
+	br {
+		display: none;
+	}
+
+	.fixtures {
+		font-size: 14px;
+	}
+
+	.team.home {
+		min-width: 160px;
+		text-align: right;
+	}
+
+	.team.away {
+		min-width: 160px;
+	}
+
+	.tv {
+		margin: 0;
+	}
+
+	.odds {
+		display: none;
+	}
+
+}
+
+@media (min-width: 1216px) {
+	br {
+		display: none;
+	}
 }

@@ -3,7 +3,7 @@ var homeTeam, awayTeam, matchDate, kickoff, homeTeamShort, awayTeamShort, tv, ho
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://api.football-data.org/v1/competitions/426/fixtures?timeFrame=n8", //Fetches next 8 days fixtures
+  "url": "http://api.football-data.org/v1/competitions/445/fixtures?timeFrame=n8", //Fetches next 8 days fixtures
   "method": "GET",
   "headers": {
     "x-auth-token": "ae060e00913d4304b43cad61531d704a",
@@ -56,18 +56,18 @@ $.ajax(settings).done(function (json) {
 
 		if (awayTeam == "AFC Bournemouth") {awayTeam = "Bournemouth"; awayTeamShort = "bournemouth";}
 		if (awayTeam == "Arsenal FC") {awayTeam = "Arsenal"; awayTeamShort = "arsenal";}
-		if (awayTeam == "Brighton & Hove Albion") {homeTeam = "Brighton"; homeTeamShort = "brighton";}
+		if (awayTeam == "Brighton & Hove Albion") {awayTeam = "Brighton"; awayTeamShort = "brighton";}
 		if (awayTeam == "Burnley FC") {awayTeam = "Burnley"; awayTeamShort = "burnley";}
 		if (awayTeam == "Chelsea FC") {awayTeam = "Chelsea"; awayTeamShort = "chelsea";}
 		if (awayTeam == "Everton FC") {awayTeam = "Everton"; awayTeamShort = "everton";}
 		if (awayTeam == "Crystal Palace FC") {awayTeam = "Crystal Palace"; awayTeamShort = "palace";}
-		if (awayTeam == "Huddersfield Town") {homeTeam = "Huddersfield"; homeTeamShort = "huddersfield";}
+		if (awayTeam == "Huddersfield Town") {awayTeam = "Huddersfield"; awayTeamShort = "huddersfield";}
 		//if (awayTeam == "Hull City FC") {awayTeam = "Hull"; awayTeamShort = "hull";}
 		if (awayTeam == "Leicester City FC") {awayTeam = "Leicester"; awayTeamShort = "leicester";}
 		if (awayTeam == "Liverpool FC") {awayTeam = "Liverpool"; awayTeamShort = "liverpool";}
 		if (awayTeam == "Manchester City FC") {awayTeam = "Man City"; awayTeamShort = "mancity";}
 		if (awayTeam == "Manchester United FC") {awayTeam = "Man Utd"; awayTeamShort = "manutd";}
-		if (awayTeam == "Newcastle United FC") {homeTeam = "Newcastle"; homeTeamShort = "newcastle";}
+		if (awayTeam == "Newcastle United FC") {awayTeam = "Newcastle"; awayTeamShort = "newcastle";}
 		//if (awayTeam == "Middlesbrough FC") {awayTeam = "Middlesbrough"; awayTeamShort = "mboro";}
 		if (awayTeam == "Southampton FC") {awayTeam = "Southampton"; awayTeamShort = "southampton";}
 		if (awayTeam == "Stoke City FC") {awayTeam = "Stoke"; awayTeamShort = "stoke";}
