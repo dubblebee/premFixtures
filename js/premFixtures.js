@@ -3,7 +3,7 @@ var homeTeam, awayTeam, matchDate, kickoff, homeTeamShort, awayTeamShort, tv, ho
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://api.football-data.org/v1/competitions/445/fixtures?timeFrame=n8", //Fetches next 8 days fixtures
+  "url": "https://api.football-data.org/v1/competitions/445/fixtures?timeFrame=n8", //Fetches next 8 days fixtures
   "method": "GET",
   "headers": {
     "x-auth-token": "ae060e00913d4304b43cad61531d704a",
